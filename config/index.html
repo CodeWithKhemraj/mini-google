@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Search</title>
+    <link rel="stylesheet" href="/public/stylesheet/style.css">
 </head>
 <body>
     <!-- Header -->
@@ -21,7 +22,7 @@
     <!-- body content -->
     <div class="container">
     
-        <img src="{{ asset('images/google_logo.svg') }}" alt=""
+        <img src="/public/images/mic.svg" alt=""
             style="display: block; margin: 0 auto; margin-bottom: 20px;">
     
         <div class="search-container">
@@ -29,7 +30,7 @@
             <input type="text" id="search-query" placeholder="Search Google or type a URL here"
                 oninput="showSuggestions(this.value)">
             <span class="mic-icon" id="mic-btn" onclick="startRecording()">
-                <img src="{{ asset('images/mic.svg') }}" alt="Microphone">
+                <img src="/public/images/mic.svg" alt="Microphone">
             </span>
         </div>
     
@@ -81,7 +82,7 @@
             <button id="modalButton">Got it!</button>
         </div>
     </div>
-
+    <script src="/public/scripts/min.js"></script>
 </body>    
 </html>
 
