@@ -71,7 +71,7 @@ input[type="text"]:focus {
   height: 24px;
   width: 24px;
   background-color: #5f6368;
-  /* -webkit-mask-image: url({{ asset('/images/search_cr23.svg') }}); */
+  -webkit-mask-image: url('images/search_cr23.svg');
   -webkit-mask-size: contain;
   -webkit-mask-repeat: no-repeat;
 }
