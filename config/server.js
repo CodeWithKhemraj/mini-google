@@ -5,13 +5,15 @@ const dotenv = require('dotenv');
 dotenv.config();
 const port = process.env.PORT || 3000;
 
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static('public'));
+
+// Serve static files from the 'public' directory
 app.use("/add-data", require("../scr/routes/test"));
 
-app.use("/", (req, res) => {
+// Route to serve the index.html file
+app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'index.html'));
 });
-
 
 // Start the server
 app.listen(port, () => {
