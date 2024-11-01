@@ -13,15 +13,7 @@ body {
 
 .header {
   display: flex;
-  flex-wrap: wrap;
-  /* Allow items to wrap */
   justify-content: space-between;
-  align-items: center;
-  position: absolute;
-  top: 20px;
-  left: 0;
-  right: 0;
-  padding: 0 20px;
 }
 
 .email-logo {
@@ -51,7 +43,7 @@ body {
 
 input[type="text"] {
   width: 100%;
-  padding: 15px 60px;
+  padding: 15px 45px;
   font-size: 18px;
   border: 1px solid #dcdcdc;
   border-radius: 24px;
@@ -65,7 +57,7 @@ input[type="text"]:focus {
 
 #icon {
   position: absolute;
-  left: 15px;
+  left: 25px;
   top: 50%;
   transform: translateY(-50%);
   height: 24px;
@@ -78,7 +70,7 @@ input[type="text"]:focus {
 
 .mic-icon {
   position: absolute;
-  right: 15px;
+  right: 25px;
   top: 50%;
   transform: translateY(-50%);
   cursor: pointer;
@@ -194,18 +186,21 @@ input::placeholder {
 
 /* Media Queries for responsiveness */
 @media (max-width: 768px) {
-  .header {
-    flex-direction: column;
-    align-items: flex-start;
+
+  .google-image {
+    width: 60%;
+  }
+
+  .container {
+    text-align: center;
+    margin-top: 50px;
+    position: relative;
   }
 
   .search-container {
     padding: 0 10px;
   }
 
-  input[type="text"] {
-    padding: 10px 40px;
-  }
 
   .result-item a {
     font-size: 1em;
@@ -215,23 +210,10 @@ input::placeholder {
     flex-direction: column;
   }
 
-  .gNO89b,
-  .RNmpXc {
-    width: 100%;
-  }
+  .gNO89b, .RNmpXc {
+    margin-top: 8px;
 }
-
-@media (max-width: 480px) {
-  input[type="text"] {
-    font-size: 16px;
-  }
-
-  .header {
-    padding: 10px;
-  }
 }
-
-
 
 .modal {
   display: none;
