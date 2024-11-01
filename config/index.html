@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <div class="left-links">
+            <a href="mailto:your-email@example.com" class="email-link" style=" text-decoration: none;">About</a>
+            <a href="mailto:your-email@example.com" class="email-link" style=" text-decoration: none;">Store</a>
+        </div>
+        <div class="right-links">
+            <a href="mailto:your-email@example.com" class="email-link">Gmail</a>
+            <a href="mailto:your-email@example.com" class="email-link">Image</a>
+            <img src="/images/download.png" alt="Email Logo" class="email-logo">
+        </div>
+    </div>
+    <!-- body content -->
+    <div class="container">
+    
+        <img src="/images/google_logo.svg" alt=""
+            style="display: block; margin: 0 auto; margin-bottom: 20px;">
+    
+        <div class="search-container">
+            <div id="icon"></div>
+            <input type="text" id="search-query" placeholder="Search Google or type a URL here"
+                oninput="showSuggestions(this.value)">
+            <span class="mic-icon" id="mic-btn" onclick="startRecording()">
+                <img src="/images/mic.svg" alt="Microphone">
+            </span>
+        </div>
+    
+        <div id="suggestions"></div>
+        <div class="alert" id="no-results-alert">No results found.</div>
+        <div id="results"></div>
+    </div>
+    <!-- Google social icons -->
+    <div class="google-social">
+    
+        <center class="social-link-icon" style="margin-top:27px;">
+            <input class="gNO89b" value="Google Search" aria-label="Google Search" name="btnK" role="button"
+                tabindex="0" type="submit" data-ved="0ahUKEwjyl6Cc-4iJAxXYnK8BHdMgDzAQ4dUDCB8">
+            <input class="RNmpXc" id="luckyButton" value="I'm Feeling Lucky" aria-label="I'm Feeling Lucky" name="btnI"
+                type="submit" jsaction="trigger.kWlxhc">
+        </center>
+    
+        <div id="SIvCob">
+            Google offered in:
+            <a href="javascript:void(0);" onclick="setLanguage('hi')">हिन्दी</a>
+            <a href="javascript:void(0);" onclick="setLanguage('pa')">पहाड़ी</a>
+            <a href="javascript:void(0);" onclick="setLanguage('sa')">संस्कृत</a>
+            <a href="javascript:void(0);" onclick="setLanguage('bn')">বাংলা</a>
+            <a href="javascript:void(0);" onclick="setLanguage('te')">తెలుగు</a>
+            <a href="javascript:void(0);" onclick="setLanguage('mr')">मराठी</a>
+            <a href="javascript:void(0);" onclick="setLanguage('ta')">தமிழ்</a>
+            <a href="javascript:void(0);" onclick="setLanguage('gu')">ગુજરાતી</a>
+            <a href="javascript:void(0);" onclick="setLanguage('kn')">ಕನ್ನಡ</a>
+            <a href="javascript:void(0);" onclick="setLanguage('ml')">മലയാളം</a>
+            <a href="javascript:void(0);" onclick="setLanguage('pu')">ਪੰਜਾਬੀ</a>
+        </div>
+    
+    
+    
+    </div>
+    <!-- Model -->
+    <div id="welcomeModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="modalClose">&times;</span>
+            <h2>
+                <span class="color-blue">G</span>
+                <span class="color-red">o</span>
+                <span class="color-yellow">o</span>
+                <span class=" color-purple">g</span>
+                <span class="color-green">l</span>
+                <span class="color-pink">e</span>
+            </h2>
+            <p>Thank you for visiting our page.</p>
+            <button id="modalButton">Got it!</button>
+        </div>
+    </div>
+    <script src="/scripts/min.js"></script>
+</body>    
+</html>
+
+
+
+
+
+
