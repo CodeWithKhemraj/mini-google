@@ -1,18 +1,18 @@
 const express = require('express');
 const path = require('path');
-const app = express();
 const dotenv = require('dotenv');
+
 dotenv.config();
+const app = express();
 const port = process.env.PORT || 3000;
 
-app.use(express.static('public'));
-
 // Serve static files from the 'public' directory
-app.use("/add-data", require("../scr/routes/test"));
+app.use(express.static(path.join(__dirname, 'public')));
+
 
 // Route to serve the index.html file
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'index.html'));
+  res.sendFile(path.join(__dirname, 'public', 'index.html')); // Serve index.html from the public directory
 });
 
 // Start the server
