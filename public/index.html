@@ -5,31 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI With Navilite</title>
-    <link rel="stylesheet" href="styles.css" />
     <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
-
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/all.css">
+   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <!-- Header -->
     <div class="header">
-        <div class="left-links">
-            <a href="mailto:your-email@example.com" class="email-link">About</a>
-            <a href="mailto:your-email@example.com" class="email-link">Store</a>
+        <div class="store_details">
+            <a href="#">About</a>
+            <a href="#">Store</a>
         </div>
-        <div class="right-links">
-            <img src="/images/user-place-holder.jpg" alt="Email Logo" class="email-logo">
-        </div>
+        <button id="darkModeToggle" onclick="toggleDarkMode()"><i class="fa-solid fa-moon"></i></button>
     </div>
-
-    <!-- Dark Mode Toggle Button -->
-    <button id="darkModeToggle" onclick="toggleDarkMode()"><i class="fas fa-moon"></i></button>
-
-    <!-- Body content -->
     <div class="container">
-        <img src="/images/ai.png" alt="" class="google-image" style="width: 30%;">
-
+        <h1>AI With Navilite</h1>
         <div class="search-container">
             <input type="text" id="search-query" placeholder="Search Google or type a URL here"
                 oninput="showSuggestions(this.value)">
@@ -41,54 +31,30 @@
         <div id="suggestions"></div>
         <div class="alert" id="no-results-alert">No results found.</div>
         <div id="results"></div>
+
+        <button onclick="openModal()">Open AI Modal</button>
     </div>
-
-    <!-- Google social icons -->
-    <div class="google-social">
-        <center>
-            <input class="gNO89b" value="AI Search" type="submit">
-            <input class="RNmpXc" id="luckyButton" value="I'm Feeling Lucky" type="submit">
-        </center>
-
-        <div id="SIvCob">
-            AI offered in:
-            <a href="javascript:void(0);" onclick="setLanguage('hi')">हिन्दी</a>
-            <a href="javascript:void(0);" onclick="setLanguage('pa')">पहाड़ी</a>
-            <!-- Add more languages here -->
-        </div>
-    </div>
-
-    <!-- Model -->
-    <div id="welcomeModal" class="modal">
+    <div id="aiModal" class="modal">
         <div class="modal-content">
-            <span class="close" id="modalClose">&times;</span>
-            <h2>
-                <span class="color-blue">G</span>
-                <span class="color-red">o</span>
-                <span class="color-yellow">o</span>
-                <span class="color-purple">g</span>
-                <span class="color-green">l</span>
-                <span class="color-pink">e</span>
-            </h2>
-            <p>Thank you for visiting our page.</p>
-            <button id="modalButton">Got it!</button>
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Welcome to Navilite AI</h2>
+            <p>Your AI assistant is here to help you.</p>
+            <button onclick="closeModal()">Got it!</button>
         </div>
     </div>
-
-    <script src="/scripts/min.js"></script>
     <script>
         function toggleDarkMode() {
             document.body.classList.toggle('dark-mode');
-            const isDarkMode = document.body.classList.contains('dark-mode');
-            const toggleButton = document.getElementById('darkModeToggle');
-
-            toggleButton.innerHTML = isDarkMode
-                ? '<i class="fas fa-sun"></i>'
-                : '<i class="fas fa-moon"></i>';
-
-            toggleButton.title = isDarkMode ? 'Switch to Light Mode' : 'Switch to Dark Mode';
+            let icon = document.querySelector("#darkModeToggle i");
+            icon.classList.toggle("fa-moon");
+            icon.classList.toggle("fa-sun");
         }
-
+        function openModal() {
+            document.getElementById("aiModal").style.display = "flex";
+        }
+        function closeModal() {
+            document.getElementById("aiModal").style.display = "none";
+        }
     </script>
 </body>
 
