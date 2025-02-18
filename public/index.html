@@ -7,7 +7,7 @@
     <title>AI With Navilite</title>
     <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/all.css">
-   <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -21,8 +21,7 @@
     <div class="container">
         <h1>AI With Navilite</h1>
         <div class="search-container">
-            <input type="text" id="search-query" placeholder="Search..."
-                oninput="showSuggestions(this.value)">
+            <input type="text" id="search-query" placeholder="Search..." oninput="showSuggestions(this.value)">
             <span class="mic-icon" id="mic-btn" onclick="startRecording()">
                 <i class="fa-solid fa-microphone"></i>
             </span>
@@ -32,7 +31,7 @@
         <div class="alert" id="no-results-alert">No results found.</div>
         <div id="results"></div>
 
-        <button onclick="openModal()">Open AI Modal</button>
+        <!-- <button onclick="openModal()">Open AI Modal</button> -->
     </div>
     <div id="aiModal" class="modal">
         <div class="modal-content">
@@ -50,6 +49,7 @@
             icon.classList.toggle("fa-moon");
             icon.classList.toggle("fa-sun");
         }
+
         function openModal() {
             document.getElementById("aiModal").style.display = "flex";
         }
