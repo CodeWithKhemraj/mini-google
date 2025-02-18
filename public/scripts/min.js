@@ -176,3 +176,53 @@ window.onload = function () {
 };
 
 
+// Latest updates
+
+function toggleDarkMode() {
+    document.body.classList.toggle('dark-mode');
+    let icon = document.querySelector("#darkModeToggle i");
+    icon.classList.toggle("fa-moon");
+    icon.classList.toggle("fa-sun");
+}
+
+function openModal() {
+    document.getElementById("aiModal").style.display = "flex";
+}
+function closeModal() {
+    document.getElementById("aiModal").style.display = "none";
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+    const textArray = [
+        "Your AI Assistant is here!",
+        "Ask Anything, Get Answers.",
+        "Powering the Future with AI.",
+        "Experience the Magic of Navilite AI."
+    ];
+    let textIndex = 0;
+    let charIndex = 0;
+    let typingTextElement = document.getElementById("typing-text");
+
+    function typeText() {
+        if (charIndex < textArray[textIndex].length) {
+            typingTextElement.innerHTML += textArray[textIndex].charAt(charIndex);
+            charIndex++;
+            setTimeout(typeText, 100); // Typing speed
+        } else {
+            setTimeout(eraseText, 15000); // Pause before erasing
+        }
+    }
+
+    function eraseText() {
+        if (charIndex > 0) {
+            typingTextElement.innerHTML = textArray[textIndex].substring(0, charIndex - 1);
+            charIndex--;
+            setTimeout(eraseText, 50); // Erasing speed
+        } else {
+            textIndex = (textIndex + 1) % textArray.length;
+            setTimeout(typeText, 500); // Pause before typing new text
+        }
+    }
+
+    typeText(); // Start the typing animation
+});

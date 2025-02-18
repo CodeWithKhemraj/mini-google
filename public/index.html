@@ -8,17 +8,19 @@
     <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/all.css">
     <link rel="stylesheet" href="styles.css">
+  
 </head>
 
 <body>
     <div class="header">
         <div class="store_details">
-            <a href="#">About</a>
-            <a href="#">Store</a>
+            <a href="#">Features</a>
+            <a href="#">How It Works</a>
         </div>
         <button id="darkModeToggle" onclick="toggleDarkMode()"><i class="fa-solid fa-moon"></i></button>
     </div>
     <div class="container">
+        <h2 id="typing-text"></h2>
         <h1>AI With Navilite</h1>
         <div class="search-container">
             <input type="text" id="search-query" placeholder="Search..." oninput="showSuggestions(this.value)">
@@ -42,21 +44,7 @@
         </div>
     </div>
     <script src="/scripts/min.js"></script>
-    <script>
-        function toggleDarkMode() {
-            document.body.classList.toggle('dark-mode');
-            let icon = document.querySelector("#darkModeToggle i");
-            icon.classList.toggle("fa-moon");
-            icon.classList.toggle("fa-sun");
-        }
 
-        function openModal() {
-            document.getElementById("aiModal").style.display = "flex";
-        }
-        function closeModal() {
-            document.getElementById("aiModal").style.display = "none";
-        }
-    </script>
 </body>
 
 </html>
