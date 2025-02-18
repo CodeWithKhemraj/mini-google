@@ -2,23 +2,81 @@
 
 ## Overview
 
-In this project, I aim to create a search functionality similar to Google. The goal is to provide users with an efficient and intuitive way to search for information across a range of topics.
+Mini Google is a web application that mimics the functionality of a search engine, providing users with an efficient and intuitive way to search for information across various topics. The application is designed for optimal performance, ensuring quick search results and a user-friendly experience.
+
+### Live Demo
+[Mini Google Live URL](https://navilite.netlify.app)
 
 ## Features
 
-- **Search Bar**: A user-friendly interface to input search queries.
+- **Search Bar**: A user-friendly interface for inputting search queries.
 - **Results Page**: Displays search results in an organized manner.
-- **Filter Options**: Users can refine their searches based on categories.
+- **Filter Options**: Users can refine their searches based on different categories.
 - **Responsive Design**: Works seamlessly on both desktop and mobile devices.
+- **Optimized Performance**: Ensures fast and accurate search results.
 
 ## Technologies Used
 
-- **Frontend**: HTML, CSS, JavaScript
-- **Backend**: Node.js, 
-- **Database**:  MySQL, 
+### Frontend
+- HTML
+- CSS
+- JavaScript
+
+### Backend
+- Node.js
+
+### Database
+- MySQL
 
 ## Installation
+
+Follow these steps to set up the project on your local machine:
 
 1. Clone the repository:
    ```bash
    git clone https://github.com/khemrajmaloor/mini-google.git
+   ```
+
+2. Navigate to the project directory:
+   ```bash
+   cd mini-google
+   ```
+
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+4. Set up the database:
+   - Create a MySQL database.
+   - Import the provided database schema.
+   - Update database connection details in the configuration file.
+
+5. Start the server:
+   ```bash
+   npm start
+   ```
+
+6. Open the application in a browser:
+   ```
+   http://localhost:3000
+   ```
+
+## Usage
+
+1. Open the application.
+2. Enter a search query in the search bar.
+3. View and filter search results.
+
+## Contribution
+
+Contributions are welcome! To contribute:
+1. Fork the repository.
+2. Create a new branch (`feature-branch`).
+3. Commit your changes.
+4. Push the branch and create a pull request.
+
+## License
+
+This project is licensed under the MIT License. See the `LICENSE` file for details.
+
