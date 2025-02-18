@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #ffffff;
+  background-color: #302d30;
   margin: 0;
   padding: 50px 20px;
 }
@@ -28,7 +28,7 @@ body {
 .email-link {
   font-size: 14px;
   padding: 0 4px;
-  color: #6e6e6e;
+  color: #fff;
 }
 
 .search-container {
@@ -75,7 +75,7 @@ input[type="text"]:focus {
   transform: translateY(-50%);
   cursor: pointer;
   font-size: 1.5em;
-  color: #4285f4;
+  color: #545454;
 }
 
 #suggestions {
@@ -144,7 +144,7 @@ input::placeholder {
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
-  background-color: #4285f4;
+  background-color: #2ba7a7;
   color: white;
   font-size: 16px;
   cursor: pointer;
@@ -153,32 +153,40 @@ input::placeholder {
 
 .gNO89b:hover,
 .RNmpXc:hover {
-  background-color: #357ae8;
+  background-color: #302d30;
 }
 
 .RNmpXc {
-  background-color: #fbbc05;
+  background-color: #302d30;
 }
 
 .RNmpXc:hover {
-  background-color: #f9c846;
+  background-color: #2ba7a7;
 }
 
 #SIvCob {
   text-align: center;
   margin-top: 20px;
   font-size: 15px;
+  color: #fff;
 }
 
 #SIvCob a {
   margin: 0 10px;
-  color: #1a0dab;
+  color: #fff;
   text-decoration: none;
   transition: color 0.3s;
 }
 
 #SIvCob a:hover {
   color: #4285f4;
+}
+
+/* Logo */
+img.google-image {
+  max-width: 100%;
+  width: 130px;
+  height: auto;
 }
 
 /* Media Queries for responsiveness */

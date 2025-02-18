@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Search Mini Google</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/all.css">
 </head>
 <body>
     <!-- Header -->
@@ -22,7 +23,7 @@
     <!-- body content -->
     <div class="container">
     
-        <img src="/images/google_logo.svg" alt="" class="google-image"
+        <img src="/images/ai.png" alt="" class="google-image"
             style="display: block; margin: 0 auto; margin-bottom: 20px;">
     
         <div class="search-container">
@@ -30,7 +31,8 @@
             <input type="text" id="search-query" placeholder="Search Google or type a URL here"
                 oninput="showSuggestions(this.value)">
             <span class="mic-icon" id="mic-btn" onclick="startRecording()">
-                <img src="/images/mic.svg" alt="Microphone">
+                <!-- <img src="/images/mic.svg" alt="Microphone"> -->
+                <i class="fa-solid fa-microphone"></i>
             </span>
         </div>
     
@@ -42,14 +44,14 @@
     <div class="google-social">
     
         <center class="social-link-icon" style="margin-top:27px;">
-            <input class="gNO89b" value="Google Search" aria-label="Google Search" name="btnK" role="button"
+            <input class="gNO89b" value="AI Search" aria-label="Google Search" name="btnK" role="button"
                 tabindex="0" type="submit" data-ved="0ahUKEwjyl6Cc-4iJAxXYnK8BHdMgDzAQ4dUDCB8">
             <input class="RNmpXc" id="luckyButton" value="I'm Feeling Lucky" aria-label="I'm Feeling Lucky" name="btnI"
                 type="submit" jsaction="trigger.kWlxhc">
         </center>
     
         <div id="SIvCob">
-            Google offered in:
+            AI offered in:
             <a href="javascript:void(0);" onclick="setLanguage('hi')">हिन्दी</a>
             <a href="javascript:void(0);" onclick="setLanguage('pa')">पहाड़ी</a>
             <a href="javascript:void(0);" onclick="setLanguage('sa')">संस्कृत</a>
