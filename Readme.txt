@@ -34,18 +34,18 @@ Mini Google is a web application that mimics the functionality of a search engin
 Follow these steps to set up the project on your local machine:
 
 1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/khemrajmaloor/mini-google.git
+   ```
+   bash git clone https://github.com/khemrajmaloor/mini-google.git
    ```
 
 2. **Navigate to the project directory:**
-   ```bash
-   cd mini-google
+   ```
+   bash cd mini-google
    ```
 
 3. **Install dependencies:**
-   ```bash
-   npm install
+   ```
+   bash npm install
    ```
 
 4. **Set up the database:**
@@ -54,8 +54,8 @@ Follow these steps to set up the project on your local machine:
    - ⚙️ Update database connection details in the configuration file.
 
 5. **Start the server:**
-   ```bash
-   npm start
+   ```
+   bash npm start
    ```
 
 6. **Open the application in a browser:**
