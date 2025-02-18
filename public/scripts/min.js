@@ -209,7 +209,7 @@ document.addEventListener("DOMContentLoaded", function () {
             charIndex++;
             setTimeout(typeText, 100); // Typing speed
         } else {
-            setTimeout(eraseText, 15000); // Pause before erasing
+            setTimeout(eraseText, 9000); // Pause before erasing
         }
     }
 
