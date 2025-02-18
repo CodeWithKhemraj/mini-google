@@ -2,20 +2,20 @@
 
 ## Overview
 
-Mini Google is a web application that mimics the functionality of a search engine, providing users with an efficient and intuitive way to search for information across various topics. The application is designed for optimal performance, ensuring quick search results and a user-friendly experience.
+Mini Google is a web application that mimics the functionality of a search engine, providing users with an efficient and intuitive way to search for information across various topics. The application is designed for optimal performance, ensuring quick search results and a seamless user experience.
 
 ### Live Demo
 [Mini Google Live URL](https://navilite.netlify.app)
 
 ## Features
 
-- **Search Bar**: A user-friendly interface for inputting search queries.
-- **Results Page**: Displays search results in an organized manner.
-- **Filter Options**: Users can refine their searches based on different categories.
-- **Responsive Design**: Works seamlessly on both desktop and mobile devices.
-- **Optimized Performance**: Ensures fast and accurate search results.
+- **Intuitive Search Bar**: Simple and effective interface for entering search queries.
+- **Organized Results Page**: Displays search results in a structured and user-friendly manner.
+- **Advanced Filters**: Users can refine searches based on multiple categories.
+- **Responsive UI**: Adapts to both desktop and mobile devices smoothly.
+- **High Performance**: Optimized for fast and accurate search results.
 
-## Technologies Used
+## Tech Stack
 
 ### Frontend
 - HTML
@@ -24,57 +24,59 @@ Mini Google is a web application that mimics the functionality of a search engin
 
 ### Backend
 - Node.js
+- Express.js
 
 ### Database
 - MySQL
 
-## Installation
+## Installation & Setup
 
 Follow these steps to set up the project on your local machine:
 
-1. Clone the repository:
+1. **Clone the repository:**
    ```bash
    git clone https://github.com/khemrajmaloor/mini-google.git
    ```
 
-2. Navigate to the project directory:
+2. **Navigate to the project directory:**
    ```bash
    cd mini-google
    ```
 
-3. Install dependencies:
+3. **Install dependencies:**
    ```bash
    npm install
    ```
 
-4. Set up the database:
+4. **Set up the database:**
    - Create a MySQL database.
    - Import the provided database schema.
    - Update database connection details in the configuration file.
 
-5. Start the server:
+5. **Start the server:**
    ```bash
    npm start
    ```
 
-6. Open the application in a browser:
+6. **Open the application in a browser:**
    ```
    http://localhost:3000
    ```
 
-## Usage
+## How to Use
 
 1. Open the application.
 2. Enter a search query in the search bar.
-3. View and filter search results.
+3. View the organized search results.
+4. Use filters to refine the search results.
 
-## Contribution
+## Contributing
 
-Contributions are welcome! To contribute:
+We welcome contributions! To contribute:
 1. Fork the repository.
 2. Create a new branch (`feature-branch`).
-3. Commit your changes.
-4. Push the branch and create a pull request.
+3. Make your changes and commit them.
+4. Push your branch and create a pull request.
 
 ## License
 
