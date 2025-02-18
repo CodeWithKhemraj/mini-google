@@ -10,7 +10,7 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 10px 20px;
-  background-color: #fff;
+  /* background-color: #fff; */
 }
 
 .header .email-link {
@@ -59,10 +59,10 @@ body {
 #darkModeToggle {
   position: fixed;
   top: 20px;
-  right: 20px;
+  right: 150px;
   padding: 10px;
-  background-color: #007bff;
-  color: white;
+  /* background-color: #007bff; */
+  color: #121212;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -74,9 +74,9 @@ body.dark-mode {
   color: #f1f1f1;
 }
 
-body.dark-mode .header {
+/* body.dark-mode .header {
   background-color: #333;
-}
+} */
 
 body.dark-mode .header .email-link {
   color: #f1f1f1;

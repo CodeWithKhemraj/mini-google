@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Search Mini Google</title>
+    <title>AI With Navilite</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/all.css">
 </head>
+
 <body>
     <!-- Header -->
     <div class="header">
@@ -20,19 +24,20 @@
     </div>
 
     <!-- Dark Mode Toggle Button -->
-    <button id="darkModeToggle" onclick="toggleDarkMode()">🌙 Dark Mode</button>
+    <button id="darkModeToggle" onclick="toggleDarkMode()"><i class="fas fa-moon"></i></button>
 
     <!-- Body content -->
     <div class="container">
         <img src="/images/ai.png" alt="" class="google-image" style="width: 30%;">
-    
+
         <div class="search-container">
-            <input type="text" id="search-query" placeholder="Search Google or type a URL here" oninput="showSuggestions(this.value)">
+            <input type="text" id="search-query" placeholder="Search Google or type a URL here"
+                oninput="showSuggestions(this.value)">
             <span class="mic-icon" id="mic-btn" onclick="startRecording()">
                 <i class="fa-solid fa-microphone"></i>
             </span>
         </div>
-    
+
         <div id="suggestions"></div>
         <div class="alert" id="no-results-alert">No results found.</div>
         <div id="results"></div>
@@ -44,7 +49,7 @@
             <input class="gNO89b" value="AI Search" type="submit">
             <input class="RNmpXc" id="luckyButton" value="I'm Feeling Lucky" type="submit">
         </center>
-    
+
         <div id="SIvCob">
             AI offered in:
             <a href="javascript:void(0);" onclick="setLanguage('hi')">हिन्दी</a>
@@ -69,14 +74,22 @@
             <button id="modalButton">Got it!</button>
         </div>
     </div>
-    
+
     <script src="/scripts/min.js"></script>
     <script>
         function toggleDarkMode() {
             document.body.classList.toggle('dark-mode');
             const isDarkMode = document.body.classList.contains('dark-mode');
-            document.getElementById('darkModeToggle').textContent = isDarkMode ? '🌞 Light Mode' : '🌙 Dark Mode';
+            const toggleButton = document.getElementById('darkModeToggle');
+
+            toggleButton.innerHTML = isDarkMode
+                ? '<i class="fas fa-sun"></i>'
+                : '<i class="fas fa-moon"></i>';
+
+            toggleButton.title = isDarkMode ? 'Switch to Light Mode' : 'Switch to Dark Mode';
         }
+
     </script>
 </body>
+
 </html>
