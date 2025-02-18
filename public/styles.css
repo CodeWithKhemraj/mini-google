@@ -51,6 +51,22 @@ body {
   margin-top: 20px;
 }
 
+
+/* Default for mobile view */
+.google-image {
+  width: 50%;
+  margin: 0 auto; /* Center the image */
+  display: block;
+}
+
+/* For desktop view (screens wider than 768px) */
+@media (min-width: 768px) {
+  .google-image {
+      width: 30%;
+  }
+}
+
+
 #darkModeToggle {
   position: fixed;
   top: 20px;
