@@ -181,6 +181,14 @@ body.dark-mode {
   position: relative;
 }
 
+.modal-content button {
+  background: #000;
+  color: white;
+  padding: 7px 26px;
+  border-radius: 5px;
+  border: none;
+}
+
 /* Responsive Modal for Mobile */
 @media (max-width: 500px) {
   .modal-content {
